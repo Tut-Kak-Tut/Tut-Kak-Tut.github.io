@@ -38,17 +38,18 @@ main{
 }
 .profil{
     background-color: aqua;
-    height: 100px;
-    display: flex;
+    display: inline;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: sticky;
-    top: 6rem;
+    top: 50%;
+    height: 100px;
     padding: 2rem;
 }
 #name{
     font-size: larger;
+    justify-self: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* Main > Tikets */
@@ -67,4 +68,13 @@ main{
 }
 .tiket-info{
     font-size: 16px;
+}
+.colapsed{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    transition: all var(--tran-seconds) ease-in-out;
 }

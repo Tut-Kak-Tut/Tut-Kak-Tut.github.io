@@ -36,5 +36,10 @@ function printNextText() {
     // Calculate the delay for the next text based on the current text length and add a pause
     setTimeout(printNextText, randomTexts[currentIndex === 0 ? randomTexts.length - 1 : currentIndex - 1].length * 100 + 5000);
 }
+const tiket_text = document.querySelectorAll(".tiket-info");
 
+    tiket_text.forEach((element) => 
+    element.addEventListener("click", (event) => {
+        event.srcElement.classList.toggle('colapsed'); 
+    }));
 printNextText();

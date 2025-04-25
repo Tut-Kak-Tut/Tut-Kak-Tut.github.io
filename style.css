@@ -42,8 +42,14 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     position: sticky;
-    top: 75px;
+    top: 6rem;
+    padding: 2rem;
+}
+#name{
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* Main > Tikets */
 .tikets{
